@@ -42,7 +42,6 @@ public class ActivityById1Activity extends BaseActivity {
         });
         webSettings.setJavaScriptEnabled(true);
         webSettings.setSupportZoom(true);//设置可支持缩放
-
         webSettings.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.SINGLE_COLUMN);//网页自适应屏幕宽度
         webSettings.setDefaultZoom(WebSettings.ZoomDensity.FAR);//默认缩放尺寸为far
         webSettings.setBuiltInZoomControls(true);//出现缩放工具
