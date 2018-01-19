@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.dql.g150t.fyhs.view.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_min_height_56"
+        android:background="@color/material_white"
+        app:leftDrawable="@mipmap/icon_back"
+        app:title="我的银行卡"
+        app:titleTextColor="@color/black"
+        app:titleTextSize="@dimen/topbar_text_size_17" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:id="@+id/iv_background_bank_card"
+            android:layout_width="match_parent"
+            android:layout_height="113dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background_bank_card" />
+
+        <ImageView
+            android:id="@+id/iv_bank_logo"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignLeft="@+id/iv_background_bank_card"
+            android:layout_alignStart="@+id/iv_background_bank_card"
+            android:layout_alignTop="@+id/iv_background_bank_card"
+            android:layout_marginLeft="23dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="21dp"
+             />
+
+        <TextView
+            android:id="@+id/tv_bank_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_bank_logo"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/iv_bank_logo"
+            android:layout_toRightOf="@+id/iv_bank_logo"
+            android:text=""
+            android:textColor="@color/material_white"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/tv_bank_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_bank_name"
+            android:layout_alignStart="@+id/tv_bank_name"
+            android:layout_below="@+id/iv_bank_logo"
+            android:layout_marginTop="20dp"
+            android:text=""
+            android:textColor="@color/material_white"
+            android:textSize="17dp" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:textColor="@color/material_red_400"
+        android:text="如需更改银行卡，请电话联系客服"/>
+
+</LinearLayout>

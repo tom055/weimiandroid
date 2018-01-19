@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.dql.g150t.fyhs.view.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_min_height_56"
+        android:background="@color/material_white"
+        app:leftDrawable="@mipmap/icon_back"
+        app:title="商品兑换"
+        app:titleTextColor="@color/black"
+        app:titleTextSize="@dimen/topbar_text_size_17" />
+
+    <ImageView
+        android:id="@+id/iv_commodity_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tv_commodity_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18dp"
+            android:textColor="@color/material_textWhite_black"/>
+
+        <TextView
+            android:id="@+id/tv_commodity_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/material_textWhite_black"/>
+
+        <TextView
+            android:id="@+id/tv_inventory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/material_textWhite_black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="商品介绍"
+            android:textSize="18dp"
+            android:textColor="#999999"/>
+
+        <TextView
+            android:id="@+id/tv_commodity_introduce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/material_textWhite_black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_convert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:background="@color/red">
+
+        <TextView
+            android:id="@+id/tv_convert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="兑换"
+            android:textSize="17dp"
+            android:textColor="@color/material_white"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+

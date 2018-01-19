@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <com.dql.g150t.fyhs.view.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_min_height_56"
+        app:title="理财"
+        app:titleTextColor="@color/black"
+        app:titleTextSize="17dp" />
+
+
+<android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/swipe_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+    <com.dql.g150t.fyhs.view.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--<com.dql.g150t.fyhs.view.TopBar
+                android:id="@+id/topbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/appbar_min_height_56"
+                app:title="理财"
+                app:titleTextColor="@color/black"
+                app:titleTextSize="17dp" />-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/grey_white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:text="热销中"
+                    android:textColor="#666666"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <com.jude.easyrecyclerview.EasyRecyclerView
+                android:id="@+id/easy_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scrollbars="none"
+                app:layout_empty="@layout/view_empty"
+                app:layout_progress="@layout/progress_layout" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/grey_white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:text="已售罄"
+                    android:textColor="#666666"
+                    android:textSize="14dp" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tv_more_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:text="更多" />
+            </LinearLayout>
+
+            <com.jude.easyrecyclerview.EasyRecyclerView
+                android:id="@+id/easy_recycler_view_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                app:layout_empty="@layout/view_empty" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/grey_white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:text="已还款"
+                    android:textColor="#666666"
+                    android:textSize="14dp" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tv_more_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:text="更多" />
+            </LinearLayout>
+
+            <com.jude.easyrecyclerview.EasyRecyclerView
+                android:id="@+id/easy_recycler_view_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                app:layout_empty="@layout/view_empty" />
+        </LinearLayout>
+    </com.dql.g150t.fyhs.view.MyScrollView>
+
+
+</android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

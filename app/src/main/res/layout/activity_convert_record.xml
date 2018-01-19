@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.dql.g150t.fyhs.view.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_min_height_56"
+        android:background="@color/material_white"
+        app:leftDrawable="@mipmap/icon_back"
+        app:title="兑换记录"
+        app:titleTextColor="@color/black"
+        app:titleTextSize="@dimen/topbar_text_size_17" />
+
+    <com.jude.easyrecyclerview.EasyRecyclerView
+        android:id="@+id/easy_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_empty="@layout/view_empty"
+        app:layout_progress="@layout/progress_layout" />
+
+</LinearLayout>

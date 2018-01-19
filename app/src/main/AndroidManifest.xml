@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dql.g150t.fyhs">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="com.fuiou.permission.FUIOU_PAY" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name="com.dql.g150t.fyhs.MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/weimi_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name="com.dql.g150t.fyhs.activity.LaunchActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.dql.g150t.fyhs.activity.MyInvestActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.LoginActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.ForgetPasswordActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.SetLoginPasswordActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.RegistActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.NextRegistActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.RegistSuccessActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.WithDrawActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.RechargeActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.SettingActivity" />
+        <activity
+            android:name="com.dql.g150t.fyhs.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.dql.g150t.fyhs.activity.AboutActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.RechargeActivity2" />
+
+        <activity android:name="com.dql.g150t.fyhs.activity.WebViewActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.DiscountCouponActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.MoneyRecordActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.ChangeLoginPasswordActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.ChangeLoginPasswordNextActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.ChangeDealPasswordActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.ForgetDealPasswordActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.SetDealPasswordActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.InvestDetailActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.SelectRedPacketActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.InvestActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.InvestSuccessActivity" />
+        <!--
+        <activity android:name=".activity.ConvertIntegralActivity" />
+        <activity android:name=".activity.ConvertRecordActivity" />
+        <activity android:name=".activity.IntegralCommodityDetailActivity" />
+        -->
+        <activity android:name="com.dql.g150t.fyhs.activity.UserInfoActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.RealnameActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.BindCardActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.BankCardActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.SetLoginPasswordTwoActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.MoneyRecordDetailActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.NewDetailActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.PlatformAnnouncementDetailActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.MoreNewDetailActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.TenderLogActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.NewTenderLogActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.InvsetDetailTwoActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.MoreSellOutActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.MoreRepaymentActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.RiskManagementActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.RecommendActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.DetailActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.InvestTwoActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.InvestSuccessTwoActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.WelcomeGuideActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.ProtocolActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.NewBigBagActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.InviteActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.TotalAssetsActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.SelectRedPacketTwoActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.Recharge2Activity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.ActivityById1Activity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.ActivityById2Activity" />
+        <activity
+            android:name="com.fuiou.mobile.activity.FyWebActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.dql.g150t.fyhs.activity.ActivityById3Activity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.CompanyProfileActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.EnterpriseFeaturesActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.HonorActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.PartnerActivity" />
+        <activity android:name="com.dql.g150t.fyhs.activity.ContactUsActivity"></activity>
+    </application>
+
+</manifest>

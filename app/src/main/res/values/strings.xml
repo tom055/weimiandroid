@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">维秘金服</string>
+    <string name="hint_username">手机号码/用户名</string>
+    <string name="hint_password">密码</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="hint_phone_number">手机号码</string>
+    <!--<string name="hint_phone_number">法人手机号码</string>-->
+    <string name="hint_username_register">用户名</string>
+    <string name="hint_set_password">设置密码（6-12位，数字、字母组成）</string>
+    <string name="hint_validate_number">验证码</string>
+    <string name="get_validate_number">获取验证码</string>
+    <string name="register_agreement">注册就表示您已同意《注册协议》</string>
+    <string name="already_have_account">已有账号？</string>
+    <string name="home_page">首页</string>
+    <string name="invest">理财</string>
+    <string name="account">发现</string>
+    <string name="more">我的</string>
+    <string name="click_again_exit">再按一次退出</string>
+    <string name="invest_immediately">立即投标</string>
+    <string name="platform_dynamic">平台动态</string>
+    <string name="hint_password_again">重复输入密码</string>
+    <string name="remmendMobilePhone">推荐人号码(选填)</string>
+    <string name="unionid">对应的微信账号</string>
+    <string name="email">电子邮箱</string>
+    <string name="legalPersonName">法人姓名</string>
+    <string name="identityNumber">法人身份证号码</string>
+    <string name="companyName">公司全称</string>
+    <string name="site">经营地址</string>
+    <string name="organizationNumber">组织机构代码</string>
+    <!--topbar-->
+    <string name="as_about">关于维秘金服</string>
+    <string name="bank_card">我的银行卡</string>
+    <string name="bind_card">绑定银行卡</string>
+    <string name="change_deal_password">修改交易密码</string>
+    <string name="change_login_password">我的银行卡</string>
+    <string name="contact_us">联系我们</string>
+
+
+    <!--linearlayout-->
+    <string name="company_profile">平台介绍</string>
+    <string name="enterprise_features">公司简介</string>
+    <string name="honor">荣誉资质</string>
+
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about">\t\t\t\t互联网金融是传统金融行业与互联网精神相结合的新兴领域。互联网"开放、平等、协作、分享"的精神往传统金融业态渗透，对人类金融模式产生根本影响，具备互联网精神的金融业态统称为互联网金融。互联网金融与传统金融的区别不仅仅在于金融业务所采用的媒介不同，更重要的在于金融参与者深谙互联网“开放、平等、协作、分享”的精髓，通过互联网、移动互联网等工具，使得传统金融业务具备透明度更强、参与度更高、协作性更好、中间成本更低、，操作上更便捷等一系列特征。
+                        \n\t\t\t\t维秘金服投资管理有限公司集对外投资、投资管理及咨询服务、商务信息咨询、企业管理咨询、财务信息咨询等多元化的企业集团，成人成己是我们维秘金服投资管理发展有限公司的企业文化，这一企业文化 体系主要是以价值观念体系和制度行为体系构成，其中价值观念体系是成人成己的核心，包括公司宗旨、公司哲学、公司经营方针、公司人才观和公司目标，在未来的发展过程中，维秘金服的发展，以硬件为基础、以软件为灵魂。不断为社会创造价值，不断推动自身发展。
+                        \n\t\t\t\t维秘金服精神：专业 认真 平衡 和谐 团队 超越 创新 纪律 实现
+                        \n\t\t\t\t人才观：沟通 责任 主动 价值 
+                          \n\t\t\t\t沟通：获得员工对企业发展理念的认同，为员工描绘可实现的发展蓝图，激励员工与公司共同实现发展目标
+  \n\t\t\t\t 责任：将合适的人放在合适的岗位，明确个人责任目标，规范培训制度
+  \n\t\t\t\t 主动：做好自己岗位上的事情就是优秀员工，就是最主动的员工
+   \n\t\t\t\t价值：平台的延伸，能力的增长，就是价值的最佳体现
+  \n\t\t\t\t 价值观：天行健，君子自强不息；地势坤，君子厚德载物；己所不欲，勿施于人； 仁者爱人，成人成己。</string>
+    <string name="company">\t\t\t\t上海镐丰资产管理有限公司是人民日报旗下二级公司北京善得商业运营管理有限公司全资控股的一家专业金融理财公司。公司成立于2016年秋，注册资金10000万人民币。地址为上海市黄浦区西藏南路760号安基大厦20层。
+      \n\t\t\t\t公司有着高学历专业的运作团队，有着非常认真负责的领导层。公司本着客户利益为第一的宗旨，全力打造最安全投资理财产品。为投资者提供一个安全的、可靠的、利益最大化的理财平台。公司现以出租房业务为轴心，全面开展出租房及租房贷业务新模式，努力把控好市场风险，以全身性的投入做稳做好做大出租房及租房贷市场，争取在3年内把全国的出租房及租房贷市场份额掌控70%在麾下。</string>
+    <string name="partner">\t\t\t\t上海镐丰资产管理有限公司有着高学历专业的运作团队，有着非常认真负责的领导层。公司本着客户利益为第一的宗旨，全力打造最安全投资理财产品。为投资者提供一个安全的、可靠的、利益最大化的理财平台。公司现以出租房业务为轴心，全面开展出租房及租房贷业务新模式，努力把控好市场风险，以全身性的投入做稳做好做大出租房及租房贷市场，争取在3年内把全国的出租房及租房贷市场份额掌控70%在麾下。</string>
+    <string name="websiteId">选择网点(选填)</string>
+    <string name="imgCode">图片验证码</string>
+    <string name="address">江西省景德镇市昌江区昌南大道泰豪珑原综合楼瓷都中心十二层3号办公用房</string>
+    <string name="tell">0798-7210018</string>
+    <string name="recharge_mark">如果提示没有开通认证支付，\n请点击我前往银联认证开通。</string>
+</resources>
+
