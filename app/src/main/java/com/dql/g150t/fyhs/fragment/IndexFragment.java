@@ -99,7 +99,6 @@ public class IndexFragment extends BaseFragment {
     private ArrayList<String> noticeList = new ArrayList<>();//公告集合
     private Index.BorrowsBean borrows = null;
     private Index.BorrowNewBean borrowsNew = null;
-    private Index.BorrowsBean borrowsFirst = null;
     private static boolean isNew = false;
     private Login login = null;
     private DecimalFormat df = new DecimalFormat("0.00");
@@ -356,7 +355,24 @@ public class IndexFragment extends BaseFragment {
                         } else {//登录的话有新手权限显示新手标没有新手权限显示普通标
                             Map<String, String> map = new HashMap<>();
                             map.put("userid", application.userId);
-                            Log.e(TAG, "onNext: "+application.userId );
+                            Log.e(TAG, "onNext:id--> "+application.userId );
+                            /*Call<ResponseBody> call=application.apiService.MyInfo2(map);
+                            call.enqueue(new Callback<ResponseBody>() {
+                                @Override
+                                public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+                                    try {
+                                        Log.e("Mytext","MyInfo2---->"+response.body().string());
+                                        System.out.println(response.body().string());
+                                    } catch (IOException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+
+                                @Override
+                                public void onFailure(Call<ResponseBody> call, Throwable t) {
+                                    Log.e("Mytext","MyInfo2---fail");
+                                }
+                            });*/
                             application.apiService.MyInfo(map)
                                     .subscribeOn(Schedulers.io())
                                     .unsubscribeOn(Schedulers.io())

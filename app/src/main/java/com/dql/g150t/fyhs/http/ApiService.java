@@ -67,6 +67,11 @@ public interface ApiService {
     @POST("app_user/toMyAccount.dql")
     Observable<MyInfo> MyInfo(@FieldMap Map<String, String> map);
 
+    /*//我的页面
+    @FormUrlEncoded
+    @POST("app_user/toMyAccount.dql")
+    Call<ResponseBody> MyInfo2(@FieldMap Map<String, String> map);*/
+
     //判断是否绑卡和已绑定银行卡
     @FormUrlEncoded
     @POST("app_user/toBankCard.dql")

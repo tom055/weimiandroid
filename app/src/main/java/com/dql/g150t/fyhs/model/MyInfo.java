@@ -6,40 +6,39 @@ package com.dql.g150t.fyhs.model;
 
 public class MyInfo {
 
-
     /**
      * msg : 获取成功
-     * userInfo : {"id":1,"user_id":1,"sex":-1,"province":"","city":""}
-     * countRecharge : 10.00
+     * userInfo : {"id":2,"user_id":2,"sex":-1,"province":"","city":""}
+     * countRecharge :
      * creditIntegral :
-     * countBorrowMap2 : {"paymentAll":2020,"waitPayAll":2020,"allInterest":20,"repayedAll":0,"faFee":0,"waitInterest2":20}
+     * countBorrowMap2 : {"paymentAll":"","waitPayAll":"","allInterest":"","repayedAll":"","faFee":"","waitInterest2":""}
      * pany :
      * financeCondition :
-     * waitForPayNum : 1
+     * waitForPayNum : 0
      * latestWaitTimeMap :
      * countTenderMoney : {"repayedMoney":"","repayedInterest":"","repayedCapital":"","lateInterest":""}
      * waitNum : 0
-     * messagesNum : 38
+     * messagesNum : 46
      * investCount : 0
      * redCount : 2
      * countBorrowTenderMap1 : {"tenderTotal":"","repayedTotal":"","repaymentYesinterestTotal":"","repayedCap":"","waitForPayTotal":"","waitCap":"","waitInterest":""}
      * spouseInfo :
      * email :
-     * latestWaitPayMap : {"latestWaitPay":"1518330712"}
-     * res : -2020.0
-     * countBorrowMap : {"repayedMoney":0,"waitPayMoney":2000,"payedInterest":0,"waitInterest":20,"borrowAllMoney":2000}
+     * latestWaitPayMap :
+     * res : 0.0
+     * countBorrowMap : {"repayedMoney":"","waitPayMoney":"","payedInterest":"","waitInterest":"","borrowAllMoney":""}
      * itLevel : {"id":1,"name":"白手起家","least_integral":1,"img_url":"/uploadFile/image/20150701/20150701172152_475.gif","description":"1"}
      * assetsInfo :
      * borrower :
      * countCash :
-     * mobile : {"id":1,"user_id":1,"randCode":"353820","mobileNum":"15867300380","passed":1,"addTime":"1513575844","addIp":"192.168.0.113","approTime":"1513575844"}
+     * mobile : {"id":2,"user_id":2,"randCode":"465549","mobileNum":"18058519851","passed":1,"addTime":"1516188694","addIp":"127.0.0.1","approTime":"1516188694"}
      * isNew : 1
      * isSign : false
-     * realName : {"id":4,"user_id":1,"real_name":"陈诗凯","card_type":"1","id_card_no":"330206199106283114","birthdate":"1991年06月28日","sex":0,"addtime":"1515666429","addip":"127.0.0.1","status":1,"remark":"实名认证成功"}
+     * realName : {"id":11,"user_id":2,"real_name":"郑文","card_type":"1","id_card_no":"421083198609120077","birthdate":"1986年09月12日","sex":0,"addtime":"1516239747","addip":"127.0.0.1","status":1,"remark":"实名认证成功"}
      * privateOwnerInfo :
      * contactWay :
-     * user : {"id":1,"style":1,"platform_id":1,"oldinvest_times":0,"userName":"15867300380","password":"dc483e80a7a0bd9ef71d8cf973673924"}
-     * account : {"id":1,"user_id":1,"total":52014,"use_money":52014,"no_use_money":0,"collection":0,"times":3}
+     * user : {"id":2,"style":1,"platform_id":1,"oldinvest_times":0,"userName":"18058519851","password":"dcc62e31c8030d9488969c5da73d2f16"}
+     * account : {"id":2,"user_id":2,"total":218.33,"use_money":218.33,"no_use_money":0,"collection":0,"times":3}
      * status : 1
      */
 
@@ -60,7 +59,7 @@ public class MyInfo {
     private CountBorrowTenderMap1Bean countBorrowTenderMap1;
     private String spouseInfo;
     private String email;
-    private LatestWaitPayMapBean latestWaitPayMap;
+    private String latestWaitPayMap;
     private String res;
     private CountBorrowMapBean countBorrowMap;
     private ItLevelBean itLevel;
@@ -69,7 +68,7 @@ public class MyInfo {
     private String countCash;
     private MobileBean mobile;
     private String isNew;
-    private boolean isSign;
+    private String isSign;
     private RealNameBean realName;
     private String privateOwnerInfo;
     private String contactWay;
@@ -213,11 +212,11 @@ public class MyInfo {
         this.email = email;
     }
 
-    public LatestWaitPayMapBean getLatestWaitPayMap() {
+    public String getLatestWaitPayMap() {
         return latestWaitPayMap;
     }
 
-    public void setLatestWaitPayMap(LatestWaitPayMapBean latestWaitPayMap) {
+    public void setLatestWaitPayMap(String latestWaitPayMap) {
         this.latestWaitPayMap = latestWaitPayMap;
     }
 
@@ -285,11 +284,11 @@ public class MyInfo {
         this.isNew = isNew;
     }
 
-    public boolean isIsSign() {
+    public String getIsSign() {
         return isSign;
     }
 
-    public void setIsSign(boolean isSign) {
+    public void setIsSign(String isSign) {
         this.isSign = isSign;
     }
 
@@ -343,40 +342,40 @@ public class MyInfo {
 
     public static class UserInfoBean {
         /**
-         * id : 1
-         * user_id : 1
+         * id : 2
+         * user_id : 2
          * sex : -1
          * province :
          * city :
          */
 
-        private int id;
-        private int user_id;
-        private int sex;
+        private String id;
+        private String user_id;
+        private String sex;
         private String province;
         private String city;
 
-        public int getId() {
+        public String getId() {
             return id;
         }
 
-        public void setId(int id) {
+        public void setId(String id) {
             this.id = id;
         }
 
-        public int getUser_id() {
+        public String getUser_id() {
             return user_id;
         }
 
-        public void setUser_id(int user_id) {
+        public void setUser_id(String user_id) {
             this.user_id = user_id;
         }
 
-        public int getSex() {
+        public String getSex() {
             return sex;
         }
 
-        public void setSex(int sex) {
+        public void setSex(String sex) {
             this.sex = sex;
         }
 
@@ -399,12 +398,12 @@ public class MyInfo {
 
     public static class CountBorrowMap2Bean {
         /**
-         * paymentAll : 2020.0
-         * waitPayAll : 2020.0
-         * allInterest : 20.0
-         * repayedAll : 0.0
-         * faFee : 0.0
-         * waitInterest2 : 20.0
+         * paymentAll :
+         * waitPayAll :
+         * allInterest :
+         * repayedAll :
+         * faFee :
+         * waitInterest2 :
          */
 
         private String paymentAll;
@@ -585,29 +584,13 @@ public class MyInfo {
         }
     }
 
-    public static class LatestWaitPayMapBean {
-        /**
-         * latestWaitPay : 1518330712
-         */
-
-        private String latestWaitPay;
-
-        public String getLatestWaitPay() {
-            return latestWaitPay;
-        }
-
-        public void setLatestWaitPay(String latestWaitPay) {
-            this.latestWaitPay = latestWaitPay;
-        }
-    }
-
     public static class CountBorrowMapBean {
         /**
-         * repayedMoney : 0.0
-         * waitPayMoney : 2000.0
-         * payedInterest : 0.0
-         * waitInterest : 20.0
-         * borrowAllMoney : 2000.0
+         * repayedMoney :
+         * waitPayMoney :
+         * payedInterest :
+         * waitInterest :
+         * borrowAllMoney :
          */
 
         private String repayedMoney;
@@ -666,17 +649,17 @@ public class MyInfo {
          * description : 1
          */
 
-        private int id;
+        private String id;
         private String name;
         private String least_integral;
         private String img_url;
         private String description;
 
-        public int getId() {
+        public String getId() {
             return id;
         }
 
-        public void setId(int id) {
+        public void setId(String id) {
             this.id = id;
         }
 
@@ -715,38 +698,38 @@ public class MyInfo {
 
     public static class MobileBean {
         /**
-         * id : 1
-         * user_id : 1
-         * randCode : 353820
-         * mobileNum : 15867300380
+         * id : 2
+         * user_id : 2
+         * randCode : 465549
+         * mobileNum : 18058519851
          * passed : 1
-         * addTime : 1513575844
-         * addIp : 192.168.0.113
-         * approTime : 1513575844
+         * addTime : 1516188694
+         * addIp : 127.0.0.1
+         * approTime : 1516188694
          */
 
-        private int id;
-        private int user_id;
+        private String id;
+        private String user_id;
         private String randCode;
         private String mobileNum;
-        private int passed;
+        private String passed;
         private String addTime;
         private String addIp;
         private String approTime;
 
-        public int getId() {
+        public String getId() {
             return id;
         }
 
-        public void setId(int id) {
+        public void setId(String id) {
             this.id = id;
         }
 
-        public int getUser_id() {
+        public String getUser_id() {
             return user_id;
         }
 
-        public void setUser_id(int user_id) {
+        public void setUser_id(String user_id) {
             this.user_id = user_id;
         }
 
@@ -766,11 +749,11 @@ public class MyInfo {
             this.mobileNum = mobileNum;
         }
 
-        public int getPassed() {
+        public String getPassed() {
             return passed;
         }
 
-        public void setPassed(int passed) {
+        public void setPassed(String passed) {
             this.passed = passed;
         }
 
@@ -801,44 +784,44 @@ public class MyInfo {
 
     public static class RealNameBean {
         /**
-         * id : 4
-         * user_id : 1
-         * real_name : 陈诗凯
+         * id : 11
+         * user_id : 2
+         * real_name : 郑文
          * card_type : 1
-         * id_card_no : 330206199106283114
-         * birthdate : 1991年06月28日
+         * id_card_no : 421083198609120077
+         * birthdate : 1986年09月12日
          * sex : 0
-         * addtime : 1515666429
+         * addtime : 1516239747
          * addip : 127.0.0.1
          * status : 1
          * remark : 实名认证成功
          */
 
-        private int id;
-        private int user_id;
+        private String id;
+        private String user_id;
         private String real_name;
         private String card_type;
         private String id_card_no;
         private String birthdate;
-        private int sex;
+        private String sex;
         private String addtime;
         private String addip;
         private String status;
         private String remark;
 
-        public int getId() {
+        public String getId() {
             return id;
         }
 
-        public void setId(int id) {
+        public void setId(String id) {
             this.id = id;
         }
 
-        public int getUser_id() {
+        public String getUser_id() {
             return user_id;
         }
 
-        public void setUser_id(int user_id) {
+        public void setUser_id(String user_id) {
             this.user_id = user_id;
         }
 
@@ -874,11 +857,11 @@ public class MyInfo {
             this.birthdate = birthdate;
         }
 
-        public int getSex() {
+        public String getSex() {
             return sex;
         }
 
-        public void setSex(int sex) {
+        public void setSex(String sex) {
             this.sex = sex;
         }
 
@@ -917,26 +900,26 @@ public class MyInfo {
 
     public static class UserBean {
         /**
-         * id : 1
+         * id : 2
          * style : 1
          * platform_id : 1
          * oldinvest_times : 0
-         * userName : 15867300380
-         * password : dc483e80a7a0bd9ef71d8cf973673924
+         * userName : 18058519851
+         * password : dcc62e31c8030d9488969c5da73d2f16
          */
 
-        private int id;
+        private String id;
         private String style;
         private String platform_id;
         private String oldinvest_times;
         private String userName;
         private String password;
 
-        public int getId() {
+        public String getId() {
             return id;
         }
 
-        public void setId(int id) {
+        public void setId(String id) {
             this.id = id;
         }
 
@@ -983,36 +966,36 @@ public class MyInfo {
 
     public static class AccountBean {
         /**
-         * id : 1
-         * user_id : 1
-         * total : 52014.0
-         * use_money : 52014.0
+         * id : 2
+         * user_id : 2
+         * total : 218.33
+         * use_money : 218.33
          * no_use_money : 0.0
          * collection : 0.0
          * times : 3
          */
 
-        private int id;
-        private int user_id;
+        private String id;
+        private String user_id;
         private String total;
         private String use_money;
         private String no_use_money;
         private String collection;
         private String times;
 
-        public int getId() {
+        public String getId() {
             return id;
         }
 
-        public void setId(int id) {
+        public void setId(String id) {
             this.id = id;
         }
 
-        public int getUser_id() {
+        public String getUser_id() {
             return user_id;
         }
 
-        public void setUser_id(int user_id) {
+        public void setUser_id(String user_id) {
             this.user_id = user_id;
         }
 

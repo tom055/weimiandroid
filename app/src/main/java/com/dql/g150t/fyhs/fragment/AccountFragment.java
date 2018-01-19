@@ -245,8 +245,8 @@ public class AccountFragment extends BaseFragment {
 
                         @Override
                         public void onNext(MyInfo myInfo) {
-                            Log.e(TAG, "onNext: " + myInfo.getAccount().getTotal());
-                            Log.e(TAG, "onNext: " + myInfo.getAccount().getCollection());
+                            Log.e("Mytext", "onNext: " + myInfo.getAccount().getTotal());
+                            Log.e("Mytext", "onNext: " + myInfo.getAccount().getCollection());
                            /* double total = myInfo.getAccount().getTotal();
                             double collection = myInfo.getAccount().getCollection();*/
                             tvTotalAssetsMoney.setText(df.format(Double.valueOf(myInfo.getAccount().getTotal())));//总资产
